@@ -22,7 +22,7 @@ This project uses libraries such as:
 4. string.h: A standard string operations library in C.
 
 The documentation for each of these libraries, along with their functions which I have used can be found below:
-unistd.h: https://en.wikipedia.org/wiki/Unistd.h
-dirent.h: https://pubs.opengroup.org/onlinepubs/009695399/basedefs/dirent.h.html
-fcntl.h: https://pubs.opengroup.org/onlinepubs/007904875/basedefs/fcntl.h.html
+- unistd.h: https://en.wikipedia.org/wiki/Unistd.h
+- dirent.h: https://pubs.opengroup.org/onlinepubs/009695399/basedefs/dirent.h.html
+- fcntl.h: https://pubs.opengroup.org/onlinepubs/007904875/basedefs/fcntl.h.html
 
