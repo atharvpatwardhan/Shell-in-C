@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1708225408 source:d:\college\operating systems\assignment1\cshell\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<dirent.h>
+	<fcntl.h>
+
