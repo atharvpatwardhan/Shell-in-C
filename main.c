@@ -7,6 +7,13 @@
 
 void cd(char *path);
 void pwd();
+void removedir();
+void help();
+void makedir();
+void ls();
+void mv();
+void cp();
+void rm();
 
 int main()
 {
@@ -31,9 +38,9 @@ int main()
         } else if(strcmp(command, "help") == 0){
             help();
         } else if(strcmp(command, "mkdir") == 0){
-            mkdir_command(arg1);
+            makedir(arg1);
         } else if(strcmp(command, "rmdir") == 0){
-            rmdir_command(arg1);
+            removedir(arg1);
         }else if(strcmp(command, "ls") == 0){
             ls(getcwd(cwd, sizeof(cwd)));
         }else if(strcmp(command, "cp") == 0){
@@ -88,7 +95,7 @@ void pwd()
     }
 }
 
-void rmdir_command(char *directory)
+void removedir(char *directory)
 {
     if(directory == NULL){
         printf("Usage: rmdir <directory>\n");
@@ -102,7 +109,7 @@ void rmdir_command(char *directory)
     }
 }
 
-void mkdir_command(char *directory)
+void makedir(char *directory)
 {
     if(directory == NULL){
         printf("Usage: mkdir <directory>\n");
@@ -129,9 +136,10 @@ void ls(char *directory)
 
     while((entry= readdir(dir))!= NULL){
         if(strcmp(entry->d_name, ".") !=0 && strcmp(entry->d_name, "..")!= 0) {
-            printf("%s\n",entry->d_name);
+            printf("%s\t",entry->d_name);
         }
     }
+    printf("\n");
     closedir(dir);
 }
 
