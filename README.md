@@ -13,6 +13,13 @@ This is a shell implemented in C. It can perform the following shell functions s
 8. rm
 9. help
 10. exit
+11. echo
+12. cat
+13. grep
+14. head
+15. tail
+16. wc
+17. touch
 
 
 This project uses libraries such as:
